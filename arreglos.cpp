@@ -60,6 +60,11 @@ int main ( ) {
         cout << endl;
     }
 
+    // Liberar la memoria previamente asignada
+    for (int i = 0; i < ren; i++){
+        delete[] matriz[i];
+    }
+    delete[] matriz; 
 
     return 0;
 }
